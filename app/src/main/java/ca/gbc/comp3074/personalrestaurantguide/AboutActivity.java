@@ -12,23 +12,13 @@ import android.widget.TextView;
 public class AboutActivity extends AppCompatActivity {
 
     private TextView aboutDescription;
-    private TextView studentNameBeatriz;
     private TextView studentIdBeatriz;
-    private TextView studentNameEsther;
-    private TextView studentIdEsther;
-    private TextView studentNameAfsana;
-    private TextView studentIdAfsana;
-    private TextView studentNameVivek;
-    private TextView studentIdVivek;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about);
-
-
-
 
         //back arrow button
         if(getSupportActionBar() != null){

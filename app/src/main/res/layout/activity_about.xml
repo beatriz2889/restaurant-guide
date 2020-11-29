@@ -7,22 +7,10 @@
     tools:context=".AboutActivity">
 
     <TextView
-        android:id="@+id/studentNameBeatriz"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Name: Beatriz Morales"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.104"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.248" />
-
-    <TextView
         android:id="@+id/aboutDescription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="This app was created by the following students:"
+        android:text="This app was created by Beatriz Morales"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.318"
@@ -37,80 +25,9 @@
         android:text="Id: 101159722"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.909"
+        app:layout_constraintHorizontal_bias="0.445"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.248" />
+        app:layout_constraintVertical_bias="0.172" />
 
-    <TextView
-        android:id="@+id/studentNameEsther"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Name: Esther Kim"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.093"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.303" />
-
-    <TextView
-        android:id="@+id/studentIdEsther"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Id: 101125413"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.909"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.303" />
-
-    <TextView
-        android:id="@+id/studentNameAfsana"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Name: Afsana Bilkis Ritu"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.108"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.358" />
-
-    <TextView
-        android:id="@+id/studentIdAfsana"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Id: 101165654"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.909"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.358" />
-
-    <TextView
-        android:id="@+id/studentNameVivek"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Name: Vivek Mohan Mathimakki"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.135"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.408" />
-
-    <TextView
-        android:id="@+id/studentIdVivek"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Id: 101078278"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.906"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.408" />
 </androidx.constraintlayout.widget.ConstraintLayout>

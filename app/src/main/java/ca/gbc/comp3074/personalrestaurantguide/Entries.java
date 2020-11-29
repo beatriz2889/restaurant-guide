@@ -84,10 +84,4 @@ public class Entries {
     public void setTags(String tags) {
         this.tags = tags;
     }
-
-
-    /*
-    public Entries get(int position) {
-        return position;
-    }*/
 }

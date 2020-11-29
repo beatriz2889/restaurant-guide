@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 public class EntryViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
 
-    public TextView nameTxtView, tagTxtView,addressTxtView,phoneTxtView,descriptionTxtView,ratingTxtView;
+    public TextView nameTxtView, tagTxtView;
     public Button editEntry, deleteEntry;
     ItemClickListener itemClickListener;
 
@@ -19,10 +19,6 @@ public class EntryViewHolder extends RecyclerView.ViewHolder implements View.OnC
         super(itemView);
         nameTxtView = (TextView) itemView.findViewById(R.id.nameTxtView);
         tagTxtView = (TextView) itemView.findViewById(R.id.tagTxtView);
-        addressTxtView = (TextView) itemView.findViewById(R.id.addressTxtView);
-       // phoneTxtView = (TextView) itemView.findViewById(R.id.phoneTxtView);
-       // descriptionTxtView = (TextView) itemView.findViewById(R.id.descriptionTxtView);
-       // ratingTxtView = (TextView) itemView.findViewById(R.id.ratingTxtView);
         deleteEntry = (Button) itemView.findViewById(R.id.deleteEntry);
         editEntry = (Button) itemView.findViewById(R.id.editEntry);
         itemView.setOnClickListener(this);
@@ -38,28 +34,4 @@ public class EntryViewHolder extends RecyclerView.ViewHolder implements View.OnC
     {
         this.itemClickListener=ic;
     }
-
-
-
-/*
-        nameTxtView= (TextView) itemView.findViewById(R.id.nameTxtView);
-
-        tagTxtView= (TextView) itemView.findViewById(R.id.tagTxtView);
-
-        editListBtn= (Button) itemView.findViewById(R.id.editEntry);
-        deleteBtn=(Button)itemView.findViewById(R.id.deleteEntry);
-
-        itemView.setOnClickListener(this);
-    }
-
-    @Override
-    public void onClick(View v) {
-        this.itemClickListener.onItemClick(v,getLayoutPosition());
-    }
-
-    public void setItemClickListener(ItemClickListener ic)
-    {
-        this.itemClickListener=ic;
-    }
-}*/
 }

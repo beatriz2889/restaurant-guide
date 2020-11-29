@@ -12,4 +12,6 @@
     <color name="gold">#FFD700</color>
     <color name="pink">#FFC0CB</color>
     <color name="colorBorder">#d0ced0</color>
+    <color name="violet">#EE82EE</color>
+    <color name="darkpink">#e75480</color>
 </resources>

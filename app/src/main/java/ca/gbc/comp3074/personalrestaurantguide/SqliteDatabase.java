@@ -37,26 +37,6 @@ public class SqliteDatabase extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE IF EXISTS "+TABLE_ENTRIES);
         onCreate(db);
     }
-/*
-    public boolean insertData(String name,String address,String phone,String description,String rating,String tags){
-        SQLiteDatabase db=this.getWritableDatabase();
-        ContentValues cv=new ContentValues();
-        cv.put(column_name,name);
-        cv.put(column_address,address);
-        cv.put(column_phone,phone);
-        cv.put(column_description,description);
-        cv.put(column_rating,rating);
-        cv.put(column_tags,tags);
-        Long result=db.insert(table_name,null,cv);
-        if(result==-1){
-            return false;
-        }
-        else{
-            return true;
-        }
-    }*/
-
-
 
     public ArrayList<Entries>listEntries(){
         String sql="select * from " + TABLE_ENTRIES;
@@ -64,8 +44,6 @@ public class SqliteDatabase extends SQLiteOpenHelper {
         ArrayList<Entries> storeEntries=new ArrayList<>();
         Cursor cursor=db.rawQuery(sql,null);
         while(cursor.moveToNext()){
-        //if(cursor.moveToFirst()){
-            //do{
 
                 int id=Integer.parseInt(cursor.getString(0));
                 String name=cursor.getString(1);
@@ -76,16 +54,11 @@ public class SqliteDatabase extends SQLiteOpenHelper {
                 String tags=cursor.getString(6);
                 storeEntries.add(new Entries(id,name,address,phone,description,rating,tags));
 
-            }//while(cursor.moveToNext());
+            }
         cursor.close();
         System.out.println("store entries list:"+storeEntries);
         return storeEntries;
         }
-       // cursor.close();
-        //System.out.println("store entries list:"+storeEntries);
-       // return storeEntries;
-
-    //}
 
 
     public void addEntries(Entries entries) {
@@ -135,26 +108,4 @@ public class SqliteDatabase extends SQLiteOpenHelper {
         SQLiteDatabase db=this.getWritableDatabase();
         db.delete(TABLE_ENTRIES, COLUMN_ID	+ "	= ?", new String[] { String.valueOf(id)});
     }
-/*
-    public Cursor showData(){
-        SQLiteDatabase db=this.getWritableDatabase();
-        Cursor cursor=db.rawQuery("select * from "+table_name,null);
-        return cursor;
-    }*/
-
-    /*
-    public Cursor showNameAndTag(){
-        SQLiteDatabase db=this.getWritableDatabase();
-        Cursor cursor=db.rawQuery("select name,tags from "+table_name,null);
-        return cursor;
-    }*/
-
-    /*
-    public Integer delete(String id)
-    {
-        SQLiteDatabase db = this.getWritableDatabase();
-        return db.delete(table_name,"Id = ?",new String[] {id});
-    }*/
-
-
 }
